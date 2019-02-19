@@ -1,25 +1,25 @@
-public class Cassette {
+public class Cassette extends Component implements IDoThese {
 
-    String make;
-    String model;
     int capacity;
 
     public Cassette(String make, String model, int capacity){
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.capacity = capacity;
-
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public int getCapacity() {
         return capacity;
+    }
+
+    public String play(){
+        return "I am playing";
+    }
+
+    public String pause(){
+        return "I am paused";
+    }
+
+    public String eject(){
+        return "You have ejected this cassette";
     }
 }

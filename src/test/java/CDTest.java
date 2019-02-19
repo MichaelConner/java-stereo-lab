@@ -27,5 +27,19 @@ public class CDTest {
         assertEquals(10, cd.getNumberOfCDs());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("I am playing", cd.play());
+    }
+
+    @Test
+    public void canPause(){
+        assertEquals("I am paused", cd.pause());
+    }
+
+    @Test
+    public void canEject(){
+        assertEquals("You have ejected these little shiny discs that some people call music circles", cd.eject());
+    }
 
 }

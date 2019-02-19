@@ -26,4 +26,21 @@ public class CassetteTest {
     public void canGetCapacity(){
         assertEquals(70, cassette.getCapacity());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("I am playing", cassette.play());
+    }
+
+    @Test
+    public void canPause(){
+        assertEquals("I am paused", cassette.pause());
+    }
+
+    @Test
+    public void canEject(){
+        assertEquals("You have ejected this cassette", cassette.eject());
+    }
+
+
 }
